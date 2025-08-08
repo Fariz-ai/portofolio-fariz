@@ -63,7 +63,9 @@ const Navbar = () => {
                 variants={fadeInUp}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}>
-                <a onClick={() => setIsMenuOpen(false)}>{text}</a>
+                <a href={`#${text}`} onClick={() => setIsMenuOpen(false)}>
+                  {text}
+                </a>
               </motion.li>
             ))}
           </motion.ul>
