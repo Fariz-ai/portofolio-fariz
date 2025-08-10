@@ -102,7 +102,7 @@ const Hero = () => {
   alamat: "Jalan Petamburan 1 No. 7, Tanah Abang, Jakarta Pusat",
   role: "Mahasiswa Teknik Informatika",
   stack: {
-    bahasaPemrograman: ["JavaScript", "Java", "PHP"],
+    bahasaPemrograman: ["JavaScript", "Java", "PHP", "Python"],
     database: ["SQL", "NoSQL"]
     framework: ["React.js", "Express.js", "TailwindCSS", "Bootstrap"]
   }
