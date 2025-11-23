@@ -84,6 +84,35 @@ const Projects = () => {
             <span>TailwindCSS</span>
           </div>
         </motion.div>
+
+        <motion.div
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          onClick={() =>
+            window.open("https://devevent-teal.vercel.app", "_blank")
+          }
+          style={{ cursor: "pointer" }}>
+          <motion.div
+            className="project-image"
+            style={{ backgroundImage: "url('/projects/devevent.jpg')" }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          />
+          <h3>DevEvent</h3>
+          <p>
+            DevEvent adalah platform web yang dirancang sebagai pusat informasi
+            terpadu untuk berbagai acara pengembangan teknologi. Website ini
+            mengumpulkan informasi mengenai hackathon, meetup, dan konferensi
+            dalam satu tempat, memudahkan para developer dan profesional IT
+            untuk menemukan dan mengikuti event-event penting di bidang
+            teknologi.
+          </p>
+          <div className="project-tech">
+            <span>Next.js</span>
+            <span>MongoDB</span>
+            <span>TailwindCSS</span>
+          </div>
+        </motion.div>
       </motion.div>
     </motion.section>
   );
