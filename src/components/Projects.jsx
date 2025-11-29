@@ -39,6 +39,31 @@ const Projects = () => {
           className="project-card"
           variants={fadeInUp}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          onClick={() =>
+            window.open("https://memory-card-delta-livid.vercel.app", "_blank")
+          }
+          style={{ cursor: "pointer" }}>
+          <motion.div
+            className="project-image"
+            style={{ backgroundImage: "url('/projects/memorycard.jpg')" }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          />
+          <h3>Memory Card</h3>
+          <p>
+            Game Memory Card interaktif yang dibangun dengan React. Menampilkan
+            kartu emoji yang harus dicocokkan pemain dengan mengingat posisinya.
+          </p>
+          <div className="project-tech">
+            <span>React.js</span>
+            <span>Vite</span>
+            <span>CSS3</span>
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}
           onClick={() => window.open("https://gdesign-pi.vercel.app", "_blank")}
           style={{ cursor: "pointer" }}>
           <motion.div
@@ -55,61 +80,6 @@ const Projects = () => {
           <div className="project-tech">
             <span>React.js</span>
             <span>DaisyUI</span>
-            <span>TailwindCSS</span>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-          onClick={() =>
-            window.open("https://movies-app.appwrite.network", "_blank")
-          }
-          style={{ cursor: "pointer" }}>
-          <motion.div
-            className="project-image"
-            style={{ backgroundImage: "url('/projects/movies.jpg')" }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-          />
-          <h3>Movies</h3>
-          <p>
-            Website untuk melihat berbagai film yang dibangun dengan teknologi
-            Appwrite sebagai backend-as-a-service dan React.js sebagai frontend
-            nya.
-          </p>
-          <div className="project-tech">
-            <span>React.js</span>
-            <span>Appwrite</span>
-            <span>TailwindCSS</span>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-          onClick={() =>
-            window.open("https://devevent-teal.vercel.app", "_blank")
-          }
-          style={{ cursor: "pointer" }}>
-          <motion.div
-            className="project-image"
-            style={{ backgroundImage: "url('/projects/devevent.jpg')" }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-          />
-          <h3>DevEvent</h3>
-          <p>
-            DevEvent adalah platform web yang dirancang sebagai pusat informasi
-            terpadu untuk berbagai acara pengembangan teknologi. Website ini
-            mengumpulkan informasi mengenai hackathon, meetup, dan konferensi
-            dalam satu tempat, memudahkan para developer dan profesional IT
-            untuk menemukan dan mengikuti event-event penting di bidang
-            teknologi.
-          </p>
-          <div className="project-tech">
-            <span>Next.js</span>
-            <span>MongoDB</span>
             <span>TailwindCSS</span>
           </div>
         </motion.div>

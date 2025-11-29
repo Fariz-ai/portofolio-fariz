@@ -104,7 +104,7 @@ const Hero = () => {
   stack: {
     bahasaPemrograman: ["JavaScript", "Java", "PHP", "Python"],
     database: ["SQL", "NoSQL"]
-    framework: ["Next.js", "React.js", "Express.js", "TailwindCSS"]
+    framework: ["React.js", "Express.js", "TailwindCSS"]
   }
 };`}
             </SyntaxHighlighter>
