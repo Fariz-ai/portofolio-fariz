@@ -40,6 +40,35 @@ const Projects = () => {
           variants={fadeInUp}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
           onClick={() =>
+            window.open(
+              "https://crypto-tracker-seven-sigma-34.vercel.app",
+              "_blank"
+            )
+          }
+          style={{ cursor: "pointer" }}>
+          <motion.div
+            className="project-image"
+            style={{ backgroundImage: "url('/projects/cryptotracker.jpg')" }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          />
+          <h3>Crypto Tracker</h3>
+          <p>
+            Aplikasi pelacak cryptocurrency real-time yang menampilkan harga
+            live, data pasar, dan grafik harga 7 hari untuk cryptocurrency
+            teratas menggunakan CoinGecko API.
+          </p>
+          <div className="project-tech">
+            <span>React.js</span>
+            <span>React Router</span>
+            <span>CoinGecko API</span>
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          onClick={() =>
             window.open("https://memory-card-delta-livid.vercel.app", "_blank")
           }
           style={{ cursor: "pointer" }}>
