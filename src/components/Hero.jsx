@@ -51,7 +51,7 @@ const Hero = () => {
               className="cta-primary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}>
-              Lihat Karyaku
+              Lihat Proyek
             </motion.a>
             <motion.a
               href="#Kontak"

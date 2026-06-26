@@ -40,9 +40,35 @@ const Projects = () => {
           variants={fadeInUp}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
           onClick={() =>
+            window.open("http://spk-film-impor.full.diskon.cloud", "_blank")
+          }
+          style={{ cursor: "pointer" }}>
+          <motion.div
+            className="project-image"
+            style={{ backgroundImage: "url('/projects/spk.jpg')" }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          />
+          <h3>Sistem Pendukung Keputusan</h3>
+          <p>
+            Sistem Pendukung Keputusan (SPK) berbasis web yang menerapkan metode
+            Simple Additive Weighting (SAW) untuk mengevaluasi dan menentukan
+            peringkat film-film impor.
+          </p>
+          <div className="project-tech">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>Bootstrap</span>
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          onClick={() =>
             window.open(
               "https://crypto-tracker-seven-sigma-34.vercel.app",
-              "_blank"
+              "_blank",
             )
           }
           style={{ cursor: "pointer" }}>
