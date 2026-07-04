@@ -40,6 +40,34 @@ const Projects = () => {
           variants={fadeInUp}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
           onClick={() =>
+            window.open("https://event-planner-4tdl.vercel.app", "_blank")
+          }
+          style={{ cursor: "pointer" }}>
+          <motion.div
+            className="project-image"
+            style={{ backgroundImage: "url('/projects/eventplanner.jpg')" }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          />
+          <h3>Event Planner</h3>
+          <p>
+            Website untuk membuat dan mengelola event dengan sistem RSVP tanpa perlu
+            tamu membuat akun. Pengguna dapat membuat event, membagikan link
+            undangan unik, serta memantau jumlah konfirmasi kehadiran
+            (Going/Maybe/Not Going) secara real-time melalui dashboard yang
+            interaktif.
+          </p>
+          <div className="project-tech">
+            <span>Next.js</span>
+            <span>Prisma</span>
+            <span>Shadcn</span>
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          onClick={() =>
             window.open("http://spk-film-impor.full.diskon.cloud", "_blank")
           }
           style={{ cursor: "pointer" }}>
